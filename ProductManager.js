@@ -53,6 +53,7 @@ export default class ProductManager {
     getProductBYId(id) {
         let productos = this.readProducts()
         let producto = productos.find(producto => producto.id===id)
+        console.log(producto)
         return producto
     }
 
